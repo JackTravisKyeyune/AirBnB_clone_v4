@@ -13,7 +13,7 @@ $(document).ready(function () {
       $('div.amenities > h4').html('&nbsp;');
     }
   });
-  $.get('http://0.0.0.0:5001/api/v1/status/', function (data, textStatus) {
+  $.get('http://34.201.161.126:5003/api/v1/status/', function (data, textStatus) {
     if (textStatus === 'success') {
       if (data.status === 'OK') {
         $('#api_status').addClass('available');
